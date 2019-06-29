@@ -75,6 +75,8 @@ def ringAlarm():
 def timeInSec(duration):
     '''
     Will reduce the duration given to seconds.
+    Argument(s):
+    duration: A list. Each index holds the value of specific time duration in HH:MM:SS format.
     '''
     duration.reverse() #Since, seconds can be entered as '5' for 5 seconds, we reverse the list of duration to match correctly with the factors.
     factors = [1, 60, 3600] #Factors to be multiplied to each of SS, MM and HH for getting the time in seconds.
